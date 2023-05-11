@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Wordwise",
+    "description": "AI explains you, what you select.",
+    "version": "1.0.0",
+    "action": {
+        "default_popup": "body.html"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "script.js"
+            ],
+            "css" : [ "fix.css"],
+            "matches": [
+                "https://*/*"
+            ]
+        }
+    ]
+}
